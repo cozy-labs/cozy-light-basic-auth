@@ -1,9 +1,9 @@
 {
-  "name": "cozy-light-auth",
+  "name": "cozy-light-basic-auth",
   "type": "plugin",
   "version": "0.1.0",
-  "displayName": "Auth Plugin",
-  "description": "A plugin to add auth management to Cozy Light",
+  "displayName": "Basic Auth Plugin",
+  "description": "A plugin to add basic auth to Cozy Light",
   "author": "Cozy Cloud <contact@cozycloud.cc> (http://cozycloud.cc)",
   "licenses": [
     {
@@ -14,7 +14,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cozy-labs/cozy-light-auth.git"
+    "url": "https://github.com/cozy-labs/cozy-light-basic-auth.git"
   },
   "dependencies": {
   }
