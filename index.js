@@ -7,7 +7,7 @@ var config_path = null;
 var basic = auth.basic({
   realm: "Cozy Light"
   }, function (username, password, callback) {
-    callback(username === "Tina" && password === "Bullock");
+    callback(username === "me" && password === "Bullock");
   }
 );
 
@@ -31,6 +31,6 @@ module.exports.configure = function(options, config, program) {
     .command('set-password')
     .description(
         'Set basic password for the current Cozy Light instance (username ' +
-        'is always me')
+        'is always me)')
     .action(setPassword);
 };
