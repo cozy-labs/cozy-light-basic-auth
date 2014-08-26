@@ -17,5 +17,6 @@
     "url": "https://github.com/cozy-labs/cozy-light-basic-auth.git"
   },
   "dependencies": {
+    "http-auth": "^2.1.9"
   }
 }

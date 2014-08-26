@@ -5,10 +5,11 @@ var config_path = null;
 
 
 var basic = auth.basic({
-  realm: "Cozy Light", function (username, password, callback) {
+  realm: "Cozy Light"
+  }, function (username, password, callback) {
     callback(username === "Tina" && password === "Bullock");
   }
-});
+);
 
 
 var setPassword = function(password) {
