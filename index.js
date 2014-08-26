@@ -12,7 +12,7 @@ var basic = auth.basic({
 );
 
 
-var setPassword = function(password) {
+var setPassword = function() {
   console.log("Password set is Bullock");
 }
 
@@ -28,8 +28,9 @@ module.exports.configure = function(options, config, program) {
   config_path = options.config_path;
 
   program
-    .command('set-password <password>')
+    .command('set-password')
     .description(
-        'Set web password to access to the current Cozy Light instance')
+        'Set basic password for the current Cozy Light instance (username ' +
+        'is always me')
     .action(setPassword);
 };
